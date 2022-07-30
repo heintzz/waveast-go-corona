@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
-:root{
+:root {
     --black: rgb(0, 0, 0);
     --gray: rgb(88, 88, 88);
     --white: rgb(255, 255, 255);
@@ -10,86 +10,90 @@
     --red: rgb(236, 88, 99);
     --pink: rgb(255, 182, 193);
 }
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     margin: 0 auto;
     font-family: 'Rubik';
+    max-width: 1440px;
 }
 
 /* first-page */
-.first-page{
+.first-page {
+    margin-top: 40px;
     padding-bottom: 40px;
     background-color: var(--whiteBlue);
 }
-.nav-bar{
+.nav-bar {
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    font-size: .9rem;
+    font-size: 0.9rem;
     height: 60px;
-    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, .1),
-                -1px -1px 4px 0 rgba(1, 1, 1, .1);
+    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0.1),
+        -1px -1px 4px 0 rgba(1, 1, 1, 0.1);
     position: fixed;
     top: 0;
-    width: 100%;
-    overflow: hidden;
+    right: 0;
+    left: 0;
+    /* width: 100%; */
+    /* overflow: hidden; */
 }
-.nav-bar li{
+.nav-bar li {
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     letter-spacing: 1.25px;
 }
-.nav-bar a{
+.nav-bar a {
     text-decoration: none;
     color: black;
 }
-.nav-logo ul{
+.nav-logo ul {
     display: flex;
     align-items: center;
 }
-.nav-logo img{
+.nav-logo img {
     height: 43px;
 }
-.red{
+.red {
     color: var(--red);
 }
-.nav-links ul{
+.nav-links ul {
     display: flex;
     align-items: center;
-    column-gap: 40px
+    column-gap: 40px;
 }
-.nav-buttons a.link{
+.nav-buttons a.link {
     background-color: var(--blue);
     color: var(--white);
 }
 .menu-btn,
-.back-btn{
+.back-btn {
     display: none;
     visibility: hidden;
 }
 
-.hero{
+.hero {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
     padding: 100px 5% 0;
 }
 .family-health,
-.doctor-patient{
+.doctor-patient {
     width: 50%;
 }
-h2{
+h2 {
     font-size: 3.125rem;
-    font-family: 'Rubik', sans-serif;;
+    font-family: 'Rubik', sans-serif;
 }
-a.link{
+a.link {
     text-decoration: none;
     color: var(--white);
     background-color: var(--red);
@@ -99,74 +103,73 @@ a.link{
     border-radius: 5px;
     padding: 15px 25px;
 }
-.blue{
+.blue {
     color: var(--blue);
 }
-h2 + p{
+h2 + p {
     color: var(--gray);
     margin: 19px 0 30px;
 }
-.family-health{
+.family-health {
     display: flex;
 }
-.family-health > div{
+.family-health > div {
     max-width: 400px;
 }
-.doctor-patient{
+.doctor-patient {
     display: flex;
     justify-content: flex-end;
 }
-.doctor-patient img{
+.doctor-patient img {
     width: 90%;
     max-width: 547px;
 }
-.stay-safe{
+.stay-safe {
     display: flex;
     column-gap: 12px;
     padding: 0 5%;
 }
-.stay-safe a{
+.stay-safe a {
     text-decoration: none;
     color: var(--black);
 }
-.desc-video{
+.desc-video {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.desc-video > p{
+.desc-video > p {
     color: var(--gray);
     font-size: 0.8rem;
 }
 
-
 /* second page */
-.second-page{
+.second-page {
     background-color: var(--white);
     padding: 79px 5%;
 }
-.app{
+.app {
     display: flex;
     align-items: center;
 }
-.desc-app{
+.desc-app {
     width: 40%;
 }
-.corona-app{
+.corona-app {
     display: flex;
     width: 60%;
     justify-content: center;
 }
-.desc-app > div{
+.desc-app > div {
     max-width: 379px;
 }
 
 /* third-page */
-.third-page{
+.third-page {
     background-color: var(--whiteBlue);
     padding: 50px 5% 50px;
 }
-.count-box > div{
+.count-box > div {
     display: flex;
     gap: 90px;
     margin: 0 auto;
@@ -175,122 +178,122 @@ h2 + p{
     max-width: 654px;
     padding: 28px;
     border-radius: 5px;
-    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, .1),
-               -1px -1px 4px 0 rgba(1, 1, 1, .1);
+    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0.1),
+        -1px -1px 4px 0 rgba(1, 1, 1, 0.1);
 }
-.count-box p{
+.count-box p {
     width: max-content;
     text-align: center;
 }
-.count-box .red{
+.count-box .red {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.25px;
 }
-.content{
+.content {
     display: flex;
     align-items: center;
-    margin-top: 79px
+    margin-top: 79px;
 }
-.content .talk-to-experts{
+.content .talk-to-experts {
     width: 50%;
 }
-.talk-to-experts > div{
+.talk-to-experts > div {
     max-width: 393px;
 }
-.experts-video{
+.experts-video {
     width: 50%;
     display: flex;
     justify-content: flex-end;
 }
-.experts-video > div{
+.experts-video > div {
     display: flex;
     justify-content: center;
     width: 522px;
     background-color: var(--white);
-    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, .1),
-    -1px -1px 4px 0 rgba(1, 1, 1, .1);
+    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0.1),
+        -1px -1px 4px 0 rgba(1, 1, 1, 0.1);
     padding: 24px 0;
 }
-.experts-video > div:hover{
-    box-shadow: 2px 2px 8px 0 rgba(1, 1, 1, .2),
-    -2px -2px 8px 0 rgba(1, 1, 1, .2);
+.experts-video > div:hover {
+    box-shadow: 2px 2px 8px 0 rgba(1, 1, 1, 0.2),
+        -2px -2px 8px 0 rgba(1, 1, 1, 0.2);
 }
 
 /* forth-page */
-.forth-page{
+.forth-page {
     padding: 50px 5% 40px;
 }
-.info{
+.info {
     text-align: center;
     max-width: 650px;
     margin: 0 auto;
 }
-.card-container{
+.card-container {
     display: grid;
     grid-auto-flow: column;
     gap: 25px;
     margin: 75px 0;
     justify-items: center;
 }
-.card-container .card{
+.card-container .card {
     text-align: center;
     padding: 35px 15px;
     max-width: 385px;
     border-radius: 5px;
-    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, .1),
-               -1px -1px 4px 0 rgba(1, 1, 1, .1);
+    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 0.1),
+        -1px -1px 4px 0 rgba(1, 1, 1, 0.1);
 }
-.card-body{
-    margin-top: 58px; 
+.card-body {
+    margin-top: 58px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
 
-@media screen and (max-width: 758px){
-    h2{
+@media screen and (max-width: 758px) {
+    h2 {
         font-size: 2.5rem;
     }
-    h2 + p{
+    h2 + p {
         font-size: 1.15rem;
     }
-    a.link{
+    a.link {
         padding: 5px 15px;
     }
-    
-    .nav-buttons{
+
+    .nav-buttons {
         display: flex;
         align-items: center;
     }
-    .nav-buttons ul{
+    .nav-buttons ul {
         margin-right: 10px;
     }
-    .menu-btn{
+    .menu-btn {
         display: block;
         visibility: visible;
-        cursor: pointer; 
+        cursor: pointer;
     }
-    .back-btn{
+    .back-btn {
         visibility: visible;
         color: white;
-        
+
         position: fixed;
         top: 28px;
     }
-    .back-btn.active{
+    .back-btn.active {
         display: block;
         cursor: pointer;
         font-size: 18px;
         z-index: 2;
     }
-    .nav-links ul{
+    .nav-links ul {
         flex-direction: column;
         display: none;
         position: fixed;
@@ -301,22 +304,22 @@ footer{
         gap: 20px;
         background-color: var(--red);
     }
-    .nav-links li{
+    .nav-links li {
         margin-top: 30px;
     }
-    .nav-links a{
+    .nav-links a {
         color: white;
     }
-    .nav-links.active ul{
+    .nav-links.active ul {
         display: flex;
         z-index: 1;
     }
-    
+
     /* first-page */
-    .first-page{
+    .first-page {
         margin: 0 auto;
     }
-    .hero{
+    .hero {
         flex-wrap: wrap;
         row-gap: 50px;
         margin-top: 20px;
@@ -324,7 +327,7 @@ footer{
     }
     .family-health,
     .doctor-patient,
-    .stay-safe{
+    .stay-safe {
         width: 100%;
         justify-content: center;
     }
@@ -332,10 +335,9 @@ footer{
         text-align: center;
         width: 80%;
     }
-    
-    
+
     /* second-page */
-    .app{
+    .app {
         flex-direction: column;
         row-gap: 50px;
     }
@@ -347,12 +349,12 @@ footer{
     }
 
     /* third-page */
-    .count-box > div{
+    .count-box > div {
         flex-direction: column;
         gap: 25px;
         align-items: center;
     }
-    .content{
+    .content {
         flex-direction: column;
         gap: 50px;
     }
@@ -364,7 +366,7 @@ footer{
         justify-content: center;
     }
     .experts-video,
-    .experts-video img{
+    .experts-video img {
         width: 100%;
         max-width: 460px;
         object-fit: cover;
